@@ -115,19 +115,9 @@ header nav ul li, .products li {
   padding: 0;
 }
 
-main h1 {
-  font-family: 'Sen', sans-serif;
-  font-size: 36px;
-  font-weight: 600;
-}
-main h1, .products {
-  margin: 0;
-  color: #888;
-}
-
-.products {
-  font-family: 'Sen', sans-serif;
-  font-size: 20px;
+.branding img {
+  height: 30rem;
+  margin: -30% 0;
 }
 
 main {
