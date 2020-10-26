@@ -1,23 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Sen:wght@400;700&display=swap');
+
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #eee;
-  font-size: 12px;
+  background-color: #ECEEF1;
+  font-size: 14px;
+  font-weight: 300;
 }
 
-footer, body, form, form p.description, form h2, form .form-field {
+footer, body, form, form p.description, form h2, form .form-field, main, .nav-description {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.nav-description {
+  align-items: flex-end;
+}
+
+.nav-description a {
+  font-weight: 400;
+}
+
 form, .captcha {
   align-items: stretch;
   background-color: white;
-  border: 1px solid grey;
   padding: 1rem 2rem;
   width: 20rem;
+}
+
+form, .captcha, form input {
+  border: 1px solid #C7C7C7;
+}
+
+form h2 {
+  font-weight: 400;
+  color: #555;
+  font-size: 24px;
+  margin: .5rem;
 }
 
 form .form-field {
@@ -42,19 +62,116 @@ form p {
 
 form p.form-agreements{
   padding: 1rem 2rem;
+  font-weight: 400;
+  font-size: 12px;
 }
 
 .captcha {
   font-size: 10px;
-  border: 1px solid grey;
   border-top: none;
   margin: 0;
-  background-color: #eee;
+  background-color: #ECEEF1;
   text-align: center;
   color: #333;
 }
 
-form a, .captcha a {
+a {
   color: #0077C5;
+  font-weight: 600;
   text-decoration: none;
+}
+
+header nav ul {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+}
+
+button, input[type="submit"] {
+  background-color: #0077C5;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 3px;
+}
+
+button {
+  font-size: 14px;
+  border: 1px solid #555;
+}
+
+input[type="submit"] {
+}
+
+header nav ul li, .products li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.products ul {
+  padding: 0;
+}
+
+main h1 {
+  font-family: 'Sen', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+}
+main h1, .products {
+  margin: 0;
+  color: #888;
+}
+
+.products {
+  font-family: 'Sen', sans-serif;
+  font-size: 20px;
+}
+
+main {
+  margin-top: 3rem;
+}
+
+
+footer {
+  margin: 1.5rem 0;
+  color: #333;
+  font-size: 12px;
+}
+
+footer a {
+  margin: 0 0.5rem;
+  color: #333;
+  font-weight: 400;
+}
+
+.form-disclaimer {
+  font-size: 10px;
+}
+
+form input {
+  padding: .5rem;
+  border-radius: 3px;
+}
+
+form label {
+  padding: .5rem 0;
+}
+
+form input[type="submit"] {
+  padding: 0.75rem 0;
+  margin: 0.5rem 0;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 800px) {
+  header {
+    display: none;
+  }
+
+  main {
+    margin-top: 0;
+  }
 }
